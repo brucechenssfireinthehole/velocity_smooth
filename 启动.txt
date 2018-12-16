@@ -1,0 +1,17 @@
+
+roslaunch agv_tcp_velocity laser.launch   读激光
+
+roslaunch ira_laser_tools laserscan_multi_merger.launch  激光融合
+
+roslaunch laser_scan_matcher demo.launch     开激光里程计
+
+rosrun map_server map_server /home/brucechen/nav_ws/src/map/test_1214.yaml  提供地图   
+
+roslaunch amcl amcl_omni.launch   开定位
+
+rosrun velocity_smooth velocity_smooth   开service
+
+rosrun soccer_maxon soccer_maxon_node 开串口通信
+
+
+
