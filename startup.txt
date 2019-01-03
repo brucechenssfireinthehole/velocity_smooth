@@ -1,3 +1,7 @@
+****************************************************************
+notes: the nodes except velocity_smooth can be found at repository: jrc_ws_agv, please download and compile them at:
+https://github.com/brucechenssfireinthehole/jrc_agv_ws
+****************************************************************
 
 roslaunch agv_tcp_velocity laser.launch   //read laser information
 
