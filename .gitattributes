@@ -1,0 +1,6 @@
+*.css linguist-language=c++
+*.less linguist-language=c++
+*.js linguist-language=c++
+*.html linguist-language=c++
+*.make linguist-language=c++
+*.cmake linguist-language=c++
