@@ -1,0 +1,17 @@
+
+roslaunch agv_tcp_velocity laser.launch   //read laser information
+
+roslaunch ira_laser_tools laserscan_multi_merger.launch  //two lasers information merge to one single laser
+
+roslaunch laser_scan_matcher demo.launch     //start laser odometer
+
+rosrun map_server map_server /home/brucechen/nav_ws/src/map/test_1214.yaml  //provide navigation map
+
+roslaunch amcl amcl_omni.launch   //start amcl localization
+
+rosrun velocity_smooth velocity_smooth   //start service
+
+rosrun soccer_maxon soccer_maxon_node    //start serial-bus communication
+
+
+
